@@ -4,7 +4,7 @@ const app = express();
 const port = 8000;
 
 const routes = function (app) {
-  app.get("/home", async (req, res) => {
+  app.get("/", async (req, res) => {
     res.sendFile(path.join(__dirname + "/public/index.html"));
   });
 };
